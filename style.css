@@ -3,8 +3,8 @@
     border: 0;
 }
 
-html{
-    font-family: "Manrope",sans-serif;
+html {
+    font-family: "Manrope", sans-serif;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -14,18 +14,19 @@ html{
 
 #navbar {
     background-color: #02A28F;
-    width: 100%;
     padding: 1rem 9rem;
 }
 
 #navbar>h1 {
     color: #fff;
+    
 }
 
-.conteudo {
+main {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    
+    gap: 2rem;
+
 }
 
 .conteudo>div>img {
@@ -51,59 +52,151 @@ html{
     margin-bottom: 1rem;
 }
 
-.posts-recentes>h2{
+.posts-recentes>h2 {
     padding: 1rem;
 }
 
-.posts-recentes>p{
+.posts-recentes>p {
     padding: 1rem;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-.cards-recentes{
+.cards-recentes {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
-    gap: 2rem 1rem;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem 2rem;
 
 }
 
-.card-rec{
+.card-rec {
     width: 22rem;
     height: 24rem;
     border-radius: 0.5rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.2rem 0.5rem;
+    /* padding: 0.2rem 0.5rem; */
 
 }
-.card-rec>img{
+
+.card-rec>img {
     width: 22rem;
     height: 11rem;
     border-radius: 0.5rem;
-    padding: 0;
 }
 
-.card-rec>h2{
+.card-rec>h2 {
     font-size: 1.5rem;
     font-weight: 700;
+    margin: 0.2rem 0.5rem;
+
 }
 
-.p-card{
+.p-card {
     color: #02A28F;
+    margin: 0.2rem 0.5rem;
+
 }
 
-.p-by{
+.p-by {
     color: #616161;
     font-size: 0.9rem;
     font-weight: 700;
+    margin: 0.2rem 0.5rem;
+
 }
 
-.p-texto{
+.p-texto {
     font-size: 0.9rem;
     font-weight: 400;
+    margin: 0.2rem 0.5rem;
+
 }
 
-.p-data{
+.p-data {
     font-size: 1rem;
     font-weight: 500;
     color: #616161;
+    margin: 0.2rem 0.5rem;
+
+}
+
+.side {
+    width: 22rem;
+    height: 24rem;
+    margin-top: 2rem;
+}
+
+.side>h2{
+    background-color: #02A28F;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem ;
+}
+
+.card-side {
+    width: 22rem;
+    display: flex;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+
+}
+
+.card-side>img {
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    
+}
+
+.card-text>h4{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text>p{
+    color: #616161;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.categoria{
+    width: 22rem;
+    height: 24rem;
+    margin-top: 2rem;
+}
+
+.categoria>h2{
+    background-color: #02A28F;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem ;
+}
+
+.categoria>div{
+    font-size: 1rem;
+    color: #616161;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02A28F;
+    height: 3rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
