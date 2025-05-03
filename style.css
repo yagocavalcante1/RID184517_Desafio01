@@ -24,7 +24,7 @@ html {
 
 main {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
 }
@@ -200,3 +200,79 @@ footer{
     font-size: 0.9rem;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    #navbar {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .conteudo>div {
+        margin-left: 0;
+    }
+
+    .conteudo>div>img {
+        width: 100%;
+    }
+
+    .posts-recentes {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .posts-recentes > h2,
+    .posts-recentes > p {
+        padding: 0.5rem;
+    }
+
+    .cards-recentes {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card-rec {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-rec > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .side {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-side {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .card-side > img {
+        width: 6rem;
+        height: auto;
+    }
+
+    .categoria {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
