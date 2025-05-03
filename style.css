@@ -201,6 +201,47 @@ footer{
     font-weight: 600;
 }
 
+.imagem-com-texto {
+    position: relative;
+    width: 46rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.imagem-com-texto img {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    color: white;
+}
+
+.texto-sobre-imagem p:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+.texto-sobre-imagem h2 {
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+}
+
+.texto-sobre-imagem p:last-child {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+
 @media (max-width: 768px) {
     #navbar {
         padding: 1rem;
@@ -273,6 +314,22 @@ footer{
         padding: 1rem;
         text-align: center;
         font-size: 0.8rem;
+    }
+    .imagem-com-texto {
+        width: 100%;
+      }
+    
+      .texto-sobre-imagem {
+        padding: 0.5rem;
+      }
+    
+      .texto-sobre-imagem h2 {
+        font-size: 1.2rem;
+      }
+    
+      .texto-sobre-imagem p {
+        font-size: 0.9rem;
+      }
     }
 }
 
